@@ -1,1 +1,46 @@
 // Navigation Styles here
+
+//Parametric mix-in
+
+.displayflex (@justify, @align)
+{
+display: flex;
+flex-direction: row
+justify-content: @justify;
+align-items: @align;
+}
+
+
+.top 
+{
+.displayflex (space-between, center)
+
+padding: 10px;
+margin: 7%
+
+    .funbus {
+    font-size: 6rem;
+}
+
+    .navbar
+{
+    .displayflex (flex-start, center)
+    display: flex;
+   flex-direction: row;
+   
+        .navitem
+{
+        font-size: 2.5rem;
+        padding: 30px;
+
+        text-decoration: none;
+        color: black;
+}
+
+
+}
+
+}
+
+
+
