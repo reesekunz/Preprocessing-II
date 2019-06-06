@@ -1,7 +1,42 @@
 // Mixins in here
 
+.buttonlayout(@width, @color)
 
-.btn
 {
-    color: red; 
+    width: @width;
+    background-color: rgb(30, 121, 124);
+    border: none;
+    color: @color;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+
+
+
+button
+{
+    .buttonlayout (75%, white)
+   
+   
 }
+
+button {
+@media @mobile {background-color: rgb(49, 134, 173);
+width: 200px;
+display: flex;
+justify-content: center;
+align-items: flex-start;
+}
+}
+
+
+
+
+
+
